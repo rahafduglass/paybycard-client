@@ -1,0 +1,78 @@
+/* Center the form in the middle of the page */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0;
+}
+
+/* Style the form */
+.otp-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+  text-align: center;
+}
+
+/* Style the label */
+.otp-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Style the input field */
+.otp-form input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Add some spacing for the input field */
+.otp-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Style the submit button (optional) */
+.otp-form button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.otp-form button:hover {
+  background-color: #0056b3;
+}
+.arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrow.left {
+  left: calc(25% / 2);
+  color: #333333;
+  background-color: rosybrown;
+}
+.arrow:hover{
+  background-color: darkorchid;
+}

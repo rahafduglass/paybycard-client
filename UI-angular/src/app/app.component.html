@@ -1,0 +1,5 @@
+<router-outlet>
+  <div *ngIf="router.url === '/'" class="button-container">
+  <button [routerLink]="['initiate-payment']" class="big-button">initiate payment </button>
+  </div>
+</router-outlet>
