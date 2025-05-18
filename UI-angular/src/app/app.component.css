@@ -1,0 +1,21 @@
+.button-container {
+  height: 100vh; /* full page height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-button {
+  font-size: 24px;
+  padding: 20px 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.big-button:hover {
+  background-color: #0056b3;
+}
