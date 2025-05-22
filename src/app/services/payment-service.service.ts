@@ -3,8 +3,6 @@ import {HttpClient} from '@angular/common/http';
 import {InitiatePaymentRequest} from '../requests/Initiate-payment-request';
 import {Observable} from 'rxjs';
 import {CompletePaymentRequest} from '../requests/complete-payment-request';
-import {CardDetails} from '../requests/card-details';
-import {InitiatePaymentFormComponent} from '../pages/initiate-payment-form/initiate-payment-form.component';
 
 @Injectable({
   providedIn: 'root'
@@ -34,7 +32,6 @@ export class PaymentService {
     paymentReference: '',
     otp: ''
   }
-  private paymentReference: string = '';
 
   initiatePayment(request: InitiatePaymentRequest): Observable<any> {
     this.initiatePaymentRequest.card = request.card;
@@ -59,7 +56,6 @@ export class PaymentService {
   }
 
   setReferenceNumber(referenceNumber: string) {
-    this.paymentReference = referenceNumber;
     sessionStorage.setItem('paymentReference', referenceNumber);
   }
 

@@ -1,0 +1,17 @@
+<div class="page-wrapper">
+
+  <form #formRef="ngForm" (ngSubmit)="submitForm()">
+
+    <div class="form-group">
+      <label for="username">username</label>
+      <input [(ngModel)]="form.username" id="username" name="username" placeholder="user_name"
+             type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="password">password</label>
+      <input [(ngModel)]="form.password" id="password" name="psasword" placeholder="****" type="password">
+    </div>
+      <button type="submit"> login</button>
+  </form>
+</div>
