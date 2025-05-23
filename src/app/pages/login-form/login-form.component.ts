@@ -27,7 +27,7 @@ export class LoginFormComponent {
       next: (res)=> {
         this.authService.setToken(res.token);
         console.log('authenticated successfully');
-        alert('authenticated successfullY');
+        alert('authenticated successfully');
         this.router.navigate(['/initiate-payment']);
       },
       error: (err)=>{
