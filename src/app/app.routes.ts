@@ -19,5 +19,9 @@ export const routes: Routes = [{
     path: 'login',
     loadComponent: () =>
       import('./pages/login-form/login-form.component').then(c => c.LoginFormComponent),
+  },{
+  path:'paginated-cards',
+    loadComponent:()=>
+      import('./pages/paginated-cards-table/paginated-cards-table.component').then(c=>c.PaginatedCardsTableComponent),
   }
 ];

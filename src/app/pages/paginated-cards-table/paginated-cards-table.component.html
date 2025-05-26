@@ -1,0 +1,48 @@
+<div class="container">
+  <h2>Cards</h2>
+
+  <!-- Show a loading spinner or message -->
+  <div *ngIf="paginatedCardsResponse.content.length === 0">
+    No cards to display.
+  </div>
+
+  <!-- Table -->
+  <table *ngIf="paginatedCardsResponse.content.length > 0" class="cards-table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Card Number</th>
+      <th>Expiry Date</th>
+      <th>Balance</th>
+      <th>Client Name</th>
+      <th>Client Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let card of paginatedCardsResponse.content">
+      <td>{{ card.id }}</td>
+      <td>{{ card.cardNumber }}</td>
+      <td>{{ card.expiryDate }}</td>
+      <td>{{ card.balance }}</td>
+      <td>{{ card.clientName }}</td>
+      <td>{{ card.clientEmail }}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <button
+      (click)="loadCards(paginatedCardsResponse.number - 1)"
+      [disabled]="paginatedCardsResponse.number === 0">
+      Previous
+    </button>
+
+    <span>Page {{ paginatedCardsResponse.number + 1 }} of {{ paginatedCardsResponse.totalPages }}</span>
+
+    <button
+      (click)="loadCards(paginatedCardsResponse.number + 1)"
+      [disabled]="paginatedCardsResponse.number + 1 >= paginatedCardsResponse.totalPages">
+      Next
+    </button>
+  </div>
+</div>

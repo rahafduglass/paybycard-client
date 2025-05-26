@@ -1,6 +1,6 @@
 <div class="page-wrapper">
   <form #formRef="ngForm" (ngSubmit)="submitForm()">
-
+  <p [ngClass]="messageClass" *ngIf="message">{{message}}</p>
     <div class="form-group">
       <label for="username">username</label>
       <input [(ngModel)]="form.username" id="username" name="username" placeholder="user_name"
