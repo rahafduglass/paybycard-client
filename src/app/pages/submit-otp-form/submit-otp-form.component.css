@@ -22,7 +22,8 @@
 .otp-form label {
   display: block;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   color: #333;
 }
 
@@ -45,12 +46,13 @@
 /* Style the submit button (optional) */
 .otp-form button {
   padding: 12px 20px;
-  background-color: #007BFF;
+  background-color: rebeccapurple;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .otp-form button:hover {

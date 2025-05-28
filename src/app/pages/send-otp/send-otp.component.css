@@ -10,7 +10,6 @@
 .button-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0rem;
   border: 1px solid #ccc;
   border-radius: 10px;
   align-items: center;
@@ -21,7 +20,7 @@
   padding: 24px 48px;
   font-size: 2rem;
   font-weight: bold;
-  background-color: #2563eb;
+  background-color: rebeccapurple;
   color: white;
   border: none;
   border-radius: 1rem;

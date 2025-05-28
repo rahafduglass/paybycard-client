@@ -3,41 +3,64 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f2f5;
-  position: relative;
-}
-.form-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  align-items: center;
-  background: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 1rem;
+  gap: 3rem; /* space between two divs */
 }
 
-form {
+.left-side,
+.right-side {
+  flex: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
+/* Logo styles */
+.left-side .logo {
+  max-width: 500px;
+  width: 300%;
+  height: auto;
+}
+
+.right-side {
+  max-width: 500px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%; /* full width inside right-side */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 label {
   margin-bottom: 0.5rem;
   font-weight: 600;
-  display: block;
+  color: grey;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-input {
-  width: 100%;
-  padding: 0.6rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+input,
+button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  width: 70%;
+  border: 1px solid #aaa;
+  display: block;
+  color: rebeccapurple;
+  margin: 0 auto;
 }
 
 input:focus {
@@ -46,25 +69,29 @@ input:focus {
 }
 
 button {
-  padding: 0.6rem;
-  background-color: #007bff;
-  color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  background-color: rebeccapurple;
+  color: white;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  font-size: 1.9rem;
 }
 
 button:hover {
   background-color: #0056b3;
 }
+
+.success-message,
+.error-message {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .success-message {
   color: green;
-  margin-top: 10px;
 }
 
 .error-message {
   color: red;
-  margin-top: 10px;
 }

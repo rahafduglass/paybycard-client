@@ -1,6 +1,7 @@
 <div class="page-wrapper">
 
   <form (ngSubmit)="submitForm()" #formRef="ngForm">
+    <p [ngClass]="messageClass" *ngIf="message">{{message}}</p>
 
     <div class="form-group">
       <label for="cardNumber">Card Number</label>
@@ -34,10 +35,6 @@
       <label for="amount">Amount</label>
       <input [(ngModel)]="form.amount" type="number" id="amount" name="amount" placeholder="100.00">
     </div>
-
-    <button type="submit">Submit Payment</button>
+    <button type="submit">Initiate Payment</button>
   </form>
-  <button class="arrow right" (click)="goToNextPage()">
-    &#8594;
-  </button>
 </div>

@@ -1,0 +1,12 @@
+<header class="main-header">
+  <nav class="navbar">
+    <div class="logo">💳 PayByCard</div>
+    <div class="nav-links">
+      <a routerLink="/initiate-payment" routerLinkActive="active">initiate payment</a>
+      <a routerLink="/send-otp" routerLinkActive="active">request otp</a>
+      <a routerLink="/submit-otp" routerLinkActive="active">submit otp</a>
+      <a routerLink="/paginated-cards" routerLinkActive="active">cards</a>
+      <a (click)="sessionStorage.clear()" routerLink="/"> logout </a>
+    </div>
+  </nav>
+</header>

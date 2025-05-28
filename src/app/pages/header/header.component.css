@@ -1,0 +1,39 @@
+/* app.component.css */
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: darkgrey;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #444;
+}
+
+.active {
+  background-color: rebeccapurple;
+}

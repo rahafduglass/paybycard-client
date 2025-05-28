@@ -1,10 +1,8 @@
 <div class="page-wrapper">
   <form (ngSubmit)="submitOtp()" #formRef="ngForm" class="otp-form">
-    <button class="arrow left" (click)="goToPreviousPage()">
-      &#8592;
-    </button>
+
     <div class="form-group">
-      <label for="otp">OTP</label>
+      <label for="otp">submit OTP To complete payment</label>
       <input [(ngModel)]="form.otp" type="text" id="otp" name="cardNumber" placeholder="xxxx">
     </div>
     <button type="submit">Submit otp</button>

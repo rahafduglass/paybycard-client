@@ -1,5 +1,11 @@
+
+<paybycard-header *ngIf="shouldShowHeader()"></paybycard-header>
+
 <router-outlet>
   <div *ngIf="router.url === '/'" class="button-container">
-  <button [routerLink]="['login']" class="big-button">Pay By Card </button>
+    <div class="content">
+      <img src="rahafLogo.png" alt="Logo" class="logo" />
+      <button class="big-button" [routerLink]="['login']">GO TO LOGIN</button>
+    </div>
   </div>
 </router-outlet>

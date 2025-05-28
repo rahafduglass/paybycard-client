@@ -46,12 +46,13 @@ input:focus {
 }
 
 button {
-  padding: 0.7rem;
-  background-color: #007bff;
+  padding: 1.7rem 1.9rem;
+  background-color: rebeccapurple;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -78,4 +79,18 @@ button:hover {
 }
 .arrow:hover{
   background-color: darkorchid;
+}
+.success-message,
+.error-message {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
 }

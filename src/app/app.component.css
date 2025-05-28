@@ -1,8 +1,19 @@
 .button-container {
-  height: 100vh; /* full page height */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 350px;
+  margin-bottom: 20px;
 }
 
 .big-button {
