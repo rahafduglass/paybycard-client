@@ -2,12 +2,13 @@ import {Component, OnInit} from '@angular/core';
 import {CardService} from '../../services/card/card.service';
 import { CommonModule } from '@angular/common';
 import {PaginatedCardsResponse} from '../../response/paginted-card-response';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-cards',
   templateUrl: './paginated-cards-table.component.html',
   styleUrls: ['./paginated-cards-table.component.css'],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
 })
 export class PaginatedCardsTableComponent implements OnInit {
   constructor(private cardService: CardService) {
